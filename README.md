@@ -1,11 +1,20 @@
 # DataBridge Documentation
 
-Official planning and architecture documentation for the open-source DataBridge project.
+**Connect. Transform. Deliver.**
 
-DataBridge is a proposed cloud-agnostic, configuration-driven data integration platform built with Python. Its initial focus is reliable batch extraction, validation, transformation and delivery.
+DataBridge is a planned open-source, cloud-agnostic data integration and engineering platform built with Python.
 
-## Documentation
+## Start here
 
-The project master plan and architecture diagrams are prepared for import. Implementation status and proposed features will be distinguished throughout the documentation.
+- [Project master plan](architecture/master-plan.md) — vision, SRS, architecture, technology stack, security, testing, governance and roadmap.
+- [Architecture diagrams](architecture/diagrams/) — 19 lightweight SVG illustrations linked from the master plan.
 
-This repository covers the open-source project only.
+![System architecture](architecture/diagrams/system-architecture.svg)
+
+## Project status
+
+Initial development. The master plan describes proposed capabilities, not a claim that they have been implemented. This repository covers the independent open-source project only.
+
+## Documentation maintenance
+
+Update the master plan and relevant diagrams together when architectural decisions change. Keep secrets, proprietary data and credentials out of the repository.
