@@ -1,0 +1,71 @@
+site_name: DataBridge Documentation
+site_description: Open-source DataBridge project documentation
+site_url: https://databridge-labs.github.io/docs/
+repo_url: https://github.com/databridge-labs/docs
+repo_name: databridge-labs/docs
+docs_dir: site_docs
+site_dir: site
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+  - Home: index.md
+  - Project:
+      - Overview: project/overview.md
+      - Problems and use cases: project/problem-and-use-cases.md
+      - Roadmap: project/roadmap.md
+      - Risks and scope: project/risks-and-scope.md
+      - Governance: project/governance.md
+      - Specification: project/specification.md
+  - Requirements: requirements/srs.md
+  - Architecture:
+      - System design: architecture/system-design.md
+      - Technology stack: architecture/technology-stack.md
+      - Connectors: architecture/connectors.md
+      - Data processing: architecture/data-processing.md
+      - Configuration and execution: architecture/configuration-and-execution.md
+      - Metadata: architecture/metadata.md
+      - Security: architecture/security.md
+      - Monitoring and scheduling: architecture/monitoring-and-scheduling.md
+      - Dashboard: architecture/dashboard.md
+  - Development:
+      - Repository structure: development/repository-structure.md
+      - Workflow and testing: development/workflow-and-testing.md
+      - Deployment: development/deployment.md
+      - Implementation plan: development/implementation-plan.md
+  - Master plan: architecture/master-plan.md
